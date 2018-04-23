@@ -37,7 +37,7 @@ public class TravelApplication extends Application<TravelConfiguration> {
         final PnrResource pnrResource = new PnrResource(pnrService);
         environment.jersey().register(pnrResource);
 
-        // NEW HTTP ENDPOINT: go to path("/pricebuster/{ticketNumber}") to see this
+        // NEW HTTP ENDPOINT: go to path("/pricebuster/{recordLocator}") to see this
         final PBResource pbResource = new PBResource(priceBusterService, ticketService, pnrService);
         environment.jersey().register(pbResource);
 
