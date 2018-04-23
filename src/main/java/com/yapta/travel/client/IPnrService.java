@@ -1,5 +1,7 @@
 package com.yapta.travel.client;
 
+import com.yapta.travel.core.Pnr;
+
 public interface IPnrService {
 
     /**
@@ -15,5 +17,5 @@ public interface IPnrService {
      * example above, ticket number 0277850344766 is a direct, round-trip flight from SEA to LAX and back. The format of each segment is:
      * {flightNumber} {departureDate} {originDestination} {segmentStatus}   {departureTime} {arrivalTime}   /{fareLadder} /E*
      */
-    String fetchPnr(String recordLocator) throws PnrNotFoundException;
+    Pnr fetchPnr(String recordLocator) throws PnrNotFoundException;
 }

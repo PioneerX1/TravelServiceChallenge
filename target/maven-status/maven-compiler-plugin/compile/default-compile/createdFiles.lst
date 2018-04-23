@@ -1,0 +1,16 @@
+com/yapta/travel/core/Ticket.class
+com/yapta/travel/client/IPriceService.class
+com/yapta/travel/TravelConfiguration.class
+com/yapta/travel/client/PnrService.class
+com/yapta/travel/core/FlightSegment.class
+com/yapta/travel/client/PnrNotFoundException.class
+com/yapta/travel/client/IPnrService.class
+com/yapta/travel/core/ClassOfService.class
+com/yapta/travel/health/PnrHealthCheck.class
+com/yapta/travel/resources/PnrResource.class
+com/yapta/travel/core/PriceQuote.class
+com/yapta/travel/TravelApplication.class
+com/yapta/travel/client/ITicketService.class
+com/yapta/travel/client/PriceService.class
+com/yapta/travel/client/TicketService.class
+com/yapta/travel/client/TicketNotFoundException.class

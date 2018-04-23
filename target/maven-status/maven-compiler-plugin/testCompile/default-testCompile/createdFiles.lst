@@ -1,0 +1,4 @@
+com/yapta/travel/client/TicketServiceTest.class
+com/yapta/travel/client/PnrServiceTest.class
+com/yapta/travel/client/PriceServiceTest.class
+com/yapta/travel/resources/PnrResourceTest.class

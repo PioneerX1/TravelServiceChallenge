@@ -1,0 +1,16 @@
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/IPnrService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/PnrService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/health/PnrHealthCheck.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/resources/PnrResource.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/core/ClassOfService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/core/PriceQuote.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/IPriceService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/ITicketService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/TravelApplication.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/TicketService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/core/FlightSegment.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/TravelConfiguration.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/core/Ticket.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/PriceService.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/PnrNotFoundException.java
+/Users/lacrookedbeat/Desktop/travel-service-java-mick-s/src/main/java/com/yapta/travel/client/TicketNotFoundException.java

@@ -4,17 +4,25 @@ import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import org.joda.money.Money;
 
+import java.util.List;
+
 public class Ticket {
+
+    /*
+    NOTE: Ticket model now includes a List of Flight Segments and must be instantiated with this.
+     */
 
     private final Money price;
     private final String ticketNumber;
     private final ClassOfService classOfService;
+    private final List<FlightSegment> flightSegments;
 
-    public Ticket(Money price, String ticketNumber, ClassOfService classOfService) {
+    public Ticket(Money price, String ticketNumber, ClassOfService classOfService, List<FlightSegment> flightSegments) {
 
         this.price = price;
         this.ticketNumber = ticketNumber;
         this.classOfService = classOfService;
+        this.flightSegments = flightSegments;
     }
 
     public Money getPrice() {
@@ -28,6 +36,8 @@ public class Ticket {
     public ClassOfService getClassOfService() {
         return classOfService;
     }
+
+    public List<FlightSegment> getFlightSegments() { return flightSegments; }
 
     @Override
     public boolean equals(Object o) {
@@ -46,10 +56,12 @@ public class Ticket {
 
     @Override
     public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("price", price)
-                .add("ticketNumber", ticketNumber)
-                .add("classOfService", classOfService)
-                .toString();
+        String ticketOutput = this.ticketNumber + "    " + this.price + "    " + this.classOfService + "\n";
+        if (this.flightSegments.size() != 0) {
+            for(FlightSegment fs : this.flightSegments) {
+                ticketOutput += "           " + fs.toString() + "\n";
+            }
+        }
+        return ticketOutput;
     }
 }

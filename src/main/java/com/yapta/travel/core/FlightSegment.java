@@ -5,16 +5,30 @@ import com.google.common.base.Objects;
 
 public class FlightSegment {
 
+    /*
+    FlightSegment model now includes Segment Status, Departure Time, Arrival Time, and Fare Ladder properties.
+     */
+
     private final String flightNumber;
     private final String departureDate;
     private final String origin;
     private final String destination;
+    private final String segmentStatus;
+    private final String departureTime;
+    private final String arrivalTime;
+    private final String fareLadder;
 
-    public FlightSegment(String flightNumber, String departureDate, String origin, String destination) {
+    public FlightSegment(String flightNumber, String departureDate, String origin, String destination,
+                        String segmentStatus, String departureTime, String arrivalTime, String fareLadder)
+    {
         this.flightNumber = flightNumber;
         this.departureDate = departureDate;
         this.origin = origin;
         this.destination = destination;
+        this.segmentStatus = segmentStatus;
+        this.departureTime = departureTime;
+        this.arrivalTime = arrivalTime;
+        this.fareLadder = fareLadder;
     }
 
     public String getFlightNumber() {
@@ -31,6 +45,22 @@ public class FlightSegment {
 
     public String getDestination() {
         return destination;
+    }
+
+    public String getSegmentStatus() {
+        return segmentStatus;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public String getFareLadder() {
+        return fareLadder;
     }
 
     @Override
@@ -51,11 +81,9 @@ public class FlightSegment {
 
     @Override
     public String toString() {
-        return MoreObjects.toStringHelper(this)
-                .add("flightNumber", flightNumber)
-                .add("departureDate", departureDate)
-                .add("origin", origin)
-                .add("destination", destination)
-                .toString();
+        String fsOutput = this.flightNumber + "  " + this.departureDate + "  " + this.origin + this.destination +
+                "  " + this.segmentStatus + "  " + this.departureTime + "  " + this.arrivalTime + "  " +
+                this.fareLadder;
+        return fsOutput;
     }
 }

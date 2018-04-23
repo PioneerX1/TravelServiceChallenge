@@ -15,7 +15,7 @@ public class PnrHealthCheck extends HealthCheck {
 
     @Override
     protected Result check() throws Exception {
-        final String pnr = pnrService.fetchPnr("ABC123");
+        final String pnr = pnrService.fetchPnr("ABC123").toString();
         if (Strings.isNullOrEmpty(pnr)) {
             return Result.unhealthy("Expected PNR does not exist");
         }

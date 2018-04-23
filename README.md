@@ -102,3 +102,10 @@ This is a pretty wide open question - we want you to use all the same tools and 
 **Record Locator**: This is the unique identifier for a PNR. Typically a 6 digit alphanumeric code, e.g. RT5Q9Y.
 
 **Flight Segment**: Flights are represented as collections of flight segments, which are collectively represented by a single ticket. For example, if you had a round trip flight from Seattle to New York with a layover in Chicago on the way there, and a direct flight on the way back there would be 3 segments: SEA->ORD, ORD->JFK, JFK->SEA. These 3 segments are represented with a single ticket.
+
+
+## Addendum from Mick  4/22/18
+**Please note that the PNR data is no longer a String, but organized into a PNR object.
+**The FlightSegment model now includes more attributes like segment status, depart time, arrival time, and fare ladder.
+**The new PriceBuster service sends its data to the PBResource, and can be viewed by visiting the path with extension of "/pricebuster/{recordLocator}" -- just replace the "pnrs" part of the path with the word "pricebuster"
+**As a result of these changes, I also altered and some of the pre-existing J-Unit tests, added new one.
